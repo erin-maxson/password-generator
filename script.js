@@ -35,18 +35,15 @@ if (size >= 8 && size <= 128) {
   console.log(isSpecial)
 }
 
-else {
-  alert("Invalid Entry")
-}
-
 if (isLower===true) {
     var positionString = Math.floor(Math.random())
     console.log(positionString)
+    finalPass=finalPass+ lowercase[positionString]
 
 }
 
 else {
-
+  alert("Invalid Entry")
 }
 
 
