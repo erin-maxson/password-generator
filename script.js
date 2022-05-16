@@ -42,6 +42,9 @@ if (isLower===true) {
 
 }
 
+// need to add a four loop iteration in here //
+
+
 else {
   alert("Invalid Entry")
 }
