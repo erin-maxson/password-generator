@@ -5,6 +5,9 @@ var uppercase = lowercase.toUpperCase()
 var number = "0123456789"
 var special = "!@#$%^&*()_+~"
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -16,10 +19,9 @@ function writePassword() {
 
 function generatePassword() {
   var finalPass = ""
-}
-
-var size = prompt("Please enter a number between 8 to 128 for your password characters.")
+  var size = prompt("Please enter a number between 8 to 128 for your password characters.")
   console.log(size)
+}
 
 if (size >= 8 && size <= 128) {
   var isLower = confirm ("Include lowercase characters?")
@@ -41,15 +43,14 @@ if (isLower===true) {
     console.log(positionString)
     finalPass=finalPass+ lowercase[positionString]
 
+    for (var i = 0; i < finalPass.length; i++) {
+      console.log("Great to see you, " + students[i]);
+    }
 }
 
 // need to add a four loop iteration in here //
-
 
 else {
   alert("Invalid Entry")
 }
 
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
