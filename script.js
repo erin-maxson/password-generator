@@ -16,10 +16,10 @@ function writePassword() {
 
 function generatePassword() {
   var finalPass = ""
-
-  var size = prompt("Please enter a number between 8 to 128 for your password characters.")
-  console.log(size)
 }
+
+var size = prompt("Please enter a number between 8 to 128 for your password characters.")
+  console.log(size)
 
 if (size >= 8 && size <= 128) {
   var isLower = confirm ("Include lowercase characters?")
@@ -36,6 +36,7 @@ if (size >= 8 && size <= 128) {
 }
 
 if (isLower===true) {
+    var finalPass = ""
     var positionString = Math.floor(Math.random())
     console.log(positionString)
     finalPass=finalPass+ lowercase[positionString]
