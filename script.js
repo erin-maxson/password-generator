@@ -35,84 +35,48 @@ function generatePassword() {
 
     var isSpecial = confirm("Include special characters?");
     console.log(isSpecial);
+
+    for (var i = 0; i < size; i++) {
+
+      if (isLower === true) {
+        // for (var i = 0; i <= size; i++);
+        var positionString = Math.floor(Math.random() * lowercase.length)
+        console.log(positionString)
+        finalPass = finalPass + lowercase[positionString]
+      }
+
+      if (isUpper === true) {
+        // for (var i = 0; i <= size; i++);
+        var positionString = Math.floor(Math.random() * uppercase.length)
+        console.log(positionString)
+        finalPass = finalPass + uppercase[positionString]
+      }
+
+      if (isNumber === true) {
+        // for (var i = 0; i <= size; i++);
+        var positionString = Math.floor(Math.random() * number.length)
+        console.log(positionString)
+        finalPass = finalPass + number[positionString]
+      }
+
+      if (isSpecial === true) {
+        // for (var i = 0; i <= size; i++);
+        var positionString = Math.floor(Math.random() * special.length)
+        console.log(positionString)
+        finalPass = finalPass + special[positionString]
+      }
+
+  else {
+        alert("Invalid Entry")
+      }
+
+    return finalPass
+
+    }
   }
-
-  for (var i = 0; i < size; i++) {
-
-    if (isLower === true) {
-      // for (var i = 0; i <= size; i++);
-      var positionString = Math.floor(Math.random() * lowercase.length)
-      console.log(positionString)
-      finalPass = finalPass + lowercase[positionString]
-    }
-
-    if (isUpper === true) {
-      // for (var i = 0; i <= size; i++);
-      var positionString = Math.floor(Math.random() * uppercase.length)
-      console.log(positionString)
-      finalPass = finalPass + uppercase[positionString]
-    }
-
-    if (isNumber === true) {
-      // for (var i = 0; i <= size; i++);
-      var positionString = Math.floor(Math.random() * number.length)
-
-      console.log(positionString)
-      finalPass = finalPass + number[positionString]
-    }
-
-    if (isSpecial === true) {
-      // for (var i = 0; i <= size; i++);
-      var positionString = Math.floor(Math.random() * special.length)
-      console.log(positionString)
-      finalPass = finalPass + special[positionString]
-    }
-
-    else {
-      alert("Invalid Entry")
-    }
-
-  }
-
-  // if (isLower === true) {
-  //   for (var i = 0; i <= size; i++);
-  //   var positionString = Math.floor(Math.random() * lowercase.length)
-  //   console.log(positionString)
-  //   finalPass = finalPass + lowercase[positionString]
-  // }
-
-  // if (isUpper === true) {
-  //   for (var i = 0; i <= size; i++);
-  //   var positionString = Math.floor(Math.random() * uppercase.length)
-  //   console.log(positionString)
-  //   finalPass = finalPass + uppercase[positionString]
-  // }
-
-  // if (isNumber === true) {
-  //   for (var i = 0; i <= size; i++);
-  //   var positionString = Math.floor(Math.random() * number.length)
-
-  //   console.log(positionString)
-  //   finalPass = finalPass + number[positionString]
-  // }
-
-  // if (isSpecial === true) {
-  //   for (var i = 0; i <= size; i++);
-  //   var positionString = Math.floor(Math.random() * special.length)
-  //   console.log(positionString)
-  //   finalPass = finalPass + special[positionString]
-  // }
-
-  // else {
-  //   alert("Invalid Entry")
-  // }
-
-  return finalPass
 
 }
 
 
-
 // need to add a four loop iteration in here //
-
 
