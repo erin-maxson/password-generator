@@ -66,16 +66,24 @@ function generatePassword() {
         finalPass = finalPass + special[positionString]
       }
 
-  else {
-        alert("Invalid Entry")
+      finalPass = finalPass.split('').sort(function () { return 0.5 - Math.random() }).join('');
+
+      if (finalPass.length > size) {
+        finalPass = finalPass.slice(0, size);
       }
+
+    }
 
     return finalPass
 
-    }
   }
 
+  else {
+    alert("Invalid Entry")
+  }
 }
+
+
 
 
 // need to add a four loop iteration in here //
