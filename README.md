@@ -6,13 +6,17 @@ This project was built to test my skills around everything I learned in our thir
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Open the index.html file in your default browser or view the links as provided through Github to open up password generator. Your screen should look like this:
+![alt text](.Assets/images/startingpoint.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Once you've opened the files, click on the "Generate Password" button to start the password generation process. Select a number of characters between 8 and 128.
+![alt text](.Assets/images/character_limit.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+After selecting your character limit, choose different types of characters from the following categories to add into your randomly generated password: lowercase, uppercase, numbers, or special characters.
+![alt text](.Assets/images/choose_your_characters.png)
+
+Once you've chosen your number and types of characters, a password will be randomly generated for you as shown in the screenshot below.
+![alt text](.Assets/images/generate_your_password.png)
 
 ## Credits
 
