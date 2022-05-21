@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project was built to test my skills around everything I learned in our third week of Coding Bootcamp. Some skills showcased in this particular exercise are Math.random, adding Event Listeners, creating for loops, console.log, and combining characters through a variety of functions.
 
 ## Table of Contents (Optional)
 
